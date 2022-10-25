@@ -1,0 +1,74 @@
+.app {
+  --my-color-1: #000000;
+  --my-color-2: #172d67;
+  --bg-color-1: #9db3ed;
+  --bg-color-2: #f9f9f9;
+  --text-color-1: #0b1537;
+  --text-color-2: #000000;
+}
+
+.app[data-theme="dark"] {
+  --my-color-1: #fbfbfb;
+  --my-color-2: #9db3ed;
+  --bg-color-1: #172d67;
+  --bg-color-2: #050c26;
+  --text-color-1: #fbfcfc;
+  --text-color-2: #bbbcbc;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.14);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.calculator {
+  width: 280px;
+  height: 500px;
+  box-shadow: 1px -1px 50px rgba(0,0,0,0.30);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  min-height: 40px;
+  width: 15%;
+  height: 10px;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+  
+}
+
+.calculator-navbar img {
+  margin-left: 9px;
+  height: 24px;
+  width: 24px;
+}

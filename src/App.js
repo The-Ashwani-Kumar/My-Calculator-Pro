@@ -76,7 +76,7 @@ function App() {
   const calculateResult = (exp) => {
     if (!exp) setResult("Enter something...")
     else if (!numbers.includes(exp.slice(-1))) setResult("Invalid Expression");
-    else setResult(eval(exp).toFixed(15) + "");
+    else setResult(eval(exp).toFixed(3) + "");
 
   }
 
